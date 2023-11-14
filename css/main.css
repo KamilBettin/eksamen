@@ -1,0 +1,174 @@
+/* Selector referring to each HTML element */
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Selector referring to the "<body>" element in the HTML document */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: calc(15px + 0.390625vw); /* This font-size calculation was taken from https://matthewjamestaylor.com/responsive-font-size?utm_content=cmp-true */
+}
+
+/* Selector referring to the HTML element labeled "<nav>" */
+nav{
+    background:yellow;
+    height:80px;
+    width:100%;
+}
+
+h1{
+    font-size:6vw;
+    padding: 5px;
+    text-align: center;
+}
+h2{
+    font-size:2.5vw;
+    text-align: center;
+}
+p{
+    padding-top: 10px;
+}
+
+
+
+/* Selector sequence that refers to "<label>" elements with class "pLogo". */
+label.pLogo{
+    color:black;
+    font-size:35px;
+    line-height:80px;
+    padding: 30px;
+    font-weight: bold;
+}
+
+label a{
+    text-decoration:none;
+    color:#000000;
+}
+
+/* Selector sequence referring to an unordered list located inside the navigation element "<nav>" */
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+
+/* Class selector - changing style of the nav bar you are on */
+.selected {
+    text-emphasis: triangle;
+    text-emphasis-position: under right;
+}
+
+/* Sequence of selectors referring to HTML elements that are nested in a navigation "<nav>", followed by an unordered list "<ul>" and finally a list element "<li>". */
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    border-radius:3px;
+}
+
+/* Sequence of selectors referring to "<a>" links that are inside "<li>" list elements, located inside unordered list elements "<ul>", nested in a navigation */
+nav ul li a{
+    color:black;
+    font-size:26px;
+    padding: 7px 13px;
+	text-decoration: none;
+}
+
+/* Selector that refers to "<a>" links when the mouse cursor is over it (hover) */
+a:hover{
+    background:#ffffd6;
+    transition: 0.5s;
+}
+
+/* Class selector, referring to elements in HTML that have a specific class (in this case "checkbtn") */
+.checkbtn{
+    font-size:30px;
+    float:right; 
+    line-height:80px;
+    cursor:pointer;
+    display:none;
+    padding-right: 20px;
+}
+
+/* ID selector, which refers to an HTML element with the identifier "check" # - denotes the ID (using in the .html file: id="check") */
+#check{
+    display:none;
+}
+
+/* Selector referring to "<section>" elements in an HTML document */
+section{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Selector referring to "<footer>" elements in an HTML document */
+footer{
+    background-color: #fff8ad; /* Background color */
+    padding: 20px;   /* Internal spacing */
+    text-align:center; /* Center text alignment */
+    bottom: 0;  /* Places the footer at the very bottom of the screen */
+    width: 100%; /* Footer width for the full width of the screen */
+}
+
+
+
+
+/* Rule that applies to navigation elements when the width of the browser is at most 858 pixels.*/
+@media (max-width: 1052px){
+
+    .menu-icon {
+        display: inline;
+        background-image: url(../img/menu.svg);
+        background-size: cover;
+        padding: 6px;
+        padding-right: 40px;
+    }
+
+/* exlained above */
+    .checkbtn{
+        display:block;
+        padding-left: 10px;
+        
+    }
+
+/* Selector referring to an unordered list in an HTML document */
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        top:80px;
+        left:-100%;
+        background-color:blanchedalmond;
+        text-align:center;
+        transition: all 0.5s;
+    }
+
+
+
+
+    /* exlained above */
+    nav ul li{
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    /* exlained above */
+    nav ul li a{
+        font-size:20px;
+    }
+
+    /* exlained above */
+    a:hover{
+        background:none;
+        color:yellow;
+
+    }
+
+/* Selector referring to the "ul" element, provided that the "check" element is checked (:checked) */
+    #check:checked ~ ul{
+        left:0;
+    }
+
+}
