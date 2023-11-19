@@ -2,6 +2,11 @@ div{
     word-wrap: break-word;
 }
 
+.titteltopical{
+    color: yellow;
+    text-shadow: black 0px 0px 20px;
+}
+
 @media (min-width: 1053px){
 .maininfo{
     grid-column: 2 / 4;
@@ -54,6 +59,96 @@ div{
     padding-top: 5rem;
 }
 
+
+.topicalpic{
+    grid-column: 2 / 5;
+    grid-row: 1;
+    background-image: url(../img/p35.jpg);
+    background-size: cover;
+    height: 50vw;
+    max-height: 800px;
+}
+
+.maininfotopical{
+    grid-column: 2 / 4;
+    grid-row: 2;
+    margin-right: 1rem;
+}
+.sideinfotopical{
+    grid-column: 4 / 5;
+    grid-row: 2 / auto;
+    padding-left: 10px;
+}
+
+.linetopical{
+    grid-column: 3 / 4;
+    grid-row: 2;
+    background-color: black;
+}
+
+.topicalpictwo{
+    margin-top: 1rem;
+    grid-column: 2 / 5;
+    grid-row: 3;
+    background-image: url(../img/jotunheimen.jpg);
+    background-size: cover;
+    height: 50vw;
+    max-height: 800px;
+}
+
+.tittelsust{
+    grid-column: 2 / 5;
+    grid-row: 4;
+}
+
+.containersus{
+    grid-column: 2 / 3;
+    grid-row: 5;
+}
+
+.containersusside{
+    grid-column: 4 / 5;
+    grid-row: 5;
+}
+
+.linesus{
+    grid-column: 3 / 4;
+    grid-row: 5;
+    background-color: black;
+}
+
+.topicalarticle{
+    margin-top: 1rem;
+    grid-column: 2 / 3;
+    grid-row: 6;
+    position: relative;
+}
+
+.topicalpicthree{
+    width: 100%;
+    max-height: 800px;
+}
+
+.topicalarticle .content{
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+
+  .topicalarticle .content a{
+    text-decoration: none;
+    color:yellow;
+    text-align: center;
+  }
+
+  .articleside{
+    grid-column: 4 / 5;
+    grid-row: 6;
+  }
+
 .footercontainer{
     display: grid;
     grid-template-columns: 5% 45% 45% 5%;
@@ -78,6 +173,9 @@ div{
         height: 60vw;
         margin-left: 5vw;
     }
+
+    
+
     .biblioteketpic{
         background-image: url(../img/biblioteket.jpg);
         background-size: cover;
@@ -86,7 +184,51 @@ div{
         margin-left: 5vw;
     }
 
-    .maininfo, .sideinfo{
+    .topicalpic{
+        background-image: url(../img/p35.jpg);
+        background-size: cover;
+        width: 90vw;
+        height: 60vw;
+        margin-left: 5vw;
+    }
+
+    .topicalpictwo{
+        background-image: url(../img/jotunheimen.jpg);
+        background-size: cover;
+        width: 90vw;
+        height: 60vw;
+        margin-left: 5vw;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .topicalpicthree{
+        width: 90vw;
+        height: 60vw;
+        margin: 20px;
+    }
+
+    .topicalarticle{
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    .topicalarticle .content{
+        position: absolute; /* Position the background text */
+        top: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        width: 90vw; /* Full width */
+        margin: 20px;
+      }
+    
+      .topicalarticle .content a{
+        text-decoration: none;
+        color:yellow;
+        text-align: center;
+      }
+
+    .maininfo, .sideinfo, .maininfotopical, .sideinfotopical, .containersus, .containersusside, .articleside{
         width: 90vw;
         margin-top: 1rem;
         margin-left: 5vw;
@@ -95,5 +237,4 @@ div{
     .newinfo{
         padding-top: 3rem;
     }
-
 }

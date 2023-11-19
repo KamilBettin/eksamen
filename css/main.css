@@ -32,7 +32,6 @@ p{
 }
 
 
-
 /* Selector sequence that refers to "<label>" elements with class "pLogo". */
 label.pLogo{
     color:black;
@@ -52,6 +51,7 @@ nav ul{
     float:right;
     margin-right: 20px;
 }
+
 
 /* Class selector - changing style of the nav bar you are on */
 .selected {
@@ -114,6 +114,7 @@ footer{
 
 
 
+
 /* Rule that applies to navigation elements when the width of the browser is at most 858 pixels.*/
 @media (max-width: 1052px){
 
@@ -143,7 +144,6 @@ footer{
         text-align:center;
         transition: all 0.5s;
     }
-
 
 
 
