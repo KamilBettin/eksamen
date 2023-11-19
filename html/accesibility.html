@@ -2,6 +2,7 @@
 <html lang="en">
 <!-- Header of the document, contains necessary information for the correct operation of the site -->
 <head>
+    <title>Accessibility</title>
     <meta charset="UTF-8">
     <meta title="Accessibility">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +26,20 @@
     </nav>
     <!-- Section of the document -->
     <section class="container">
-        to be continued
+        <div class="maininfoaccess">
+            <h1>Accessibility</h1>
+            <h2>A little bit of information about accesibility of this page.</h2>
+            <p class="newinfo">When writing this page, I had in mind from the beginning the accessibility of the site for anyone and any platform on which it will be opened. </p>
+            <p>I started with the navigation, which automatically adapts to the size of the page and if the size of the page is smaller than acceptable then automatically the usual list of links will be hidden and a hamburger button (checkbox) will be added, which can be expanded. </p>
+            <p>I used grid (non-automatic) to make the page look nice in the browser on the computer. Unfortunately, on smaller devices the layout of the page was not very practical, due to the fact that there was too little space in various places for text. Therefore, I also set the grid to work in different resolutions. And in smaller ones the text was simply arranged one by one. Of course, I also added so that in these smaller resolutions the text would not blend together too much (of course, in the larger ones it was not necessary because of the grid).</p>
+            <p>I also tried to make the text readable at all available resolutions on the site and to automatically adjust for browser size. For this, among other things, I used a special algorithm that I found on the Internet (quoted in the code btw).</p>
+            <p>After finishing writing and being satisfied with what I did (I prefer backend btw so be a bit forgiving) I ran for the first time the accessibility test on google chrome using Lighthouse. I got a score of 91 in availability and the only error I got is the lack of <code>tittel</code> (Its just one thing so I think Im not going to include picture of this one). And after adding the <code>title</code>, I ran the test again receiving a score of 100, on both phone and computer resolution. Here are the tests I ran.</p>
+            <h3>Pictures of the accessibility tests:</h3>
+            <img src="../img/accessibilitymobile.png" alt="Picture of the accessibility test on mobile" width="100%">
+            <img src="../img/accessibilitydesktop.png" alt="Picture of the accessibility test on desktop" width="100%">
+
+            <p class="newinfo">Thank you for your time grading this site, bye. </p>
+        </div>
     </section>
     <!-- Footer of the document -->
     <footer class="footercontainer">
