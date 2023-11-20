@@ -37,67 +37,67 @@ p{
 
 /* Selector sequence that refers to "<label>" elements with class "pLogo". */
 label.pLogo{
-    color:black;
-    font-size:35px;
-    line-height:80px;
-    padding: 30px;
-    font-weight: bold;
+    color:black; /* sets color to black */
+    font-size:35px; /* sets fontsieze */
+    line-height:80px; /* sets height to 80px */
+    padding: 30px; /* sets padding 30px all sides */
+    font-weight: bold; /* sets style of font to bold */
 }
 
 /* Selector referring to the HTML element labeled "<a>" in label sequence*/
 label a{
-    text-decoration:none;
-    color:#000000;
+    text-decoration:none; /* sets decoration to none */
+    color:#000000; /* sets color */
 }
 
 /* Selector sequence referring to an unordered list located inside the navigation element "<nav>" */
 nav ul{
-    float:right;
-    margin-right: 20px;
+    float:right; /* sets position to right */
+    margin-right: 20px; /* sets margin 20 px to the right */
 }
 
 
 /* Class selector - changing style of the nav bar you are on */
 .selected {
-    text-emphasis: triangle;
-    text-emphasis-position: under right;
+    text-emphasis: triangle; /* text decoration - triangle */
+    text-emphasis-position: under right; /* position of triangles - under */
 }
 
 /* Sequence of selectors referring to HTML elements that are nested in a navigation "<nav>", followed by an unordered list "<ul>" and finally a list element "<li>". */
 nav ul li{
-    display:inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-    border-radius:3px;
+    display:inline-block; /* respecting other rules */
+    line-height: 80px; /* sets height to 80 px */
+    margin: 0 5px; /* top/under margins has 0 margin - right/left has 5px margin */
+    border-radius:3px; /* cuts the edges? looks it make smoother */
 }
 
 /* Sequence of selectors referring to "<a>" links that are inside "<li>" list elements, located inside unordered list elements "<ul>", nested in a navigation */
 nav ul li a{
-    color:black;
-    font-size:26px;
-    padding: 7px 13px;
-	text-decoration: none;
+    color:black; /* sets color to black */
+    font-size:26px; /* sets fontsize */
+    padding: 7px 13px; /* sets padding top/bot to 7px / right/left to 13 px */
+    text-decoration: none; /* sets text decoration to none */
 }
 
 /* Selector that refers to "<a>" links when the mouse cursor is over it (hover) */
 a:hover{
-    background:#ffffd6;
-    transition: 0.5s;
+    background:#ffffd6; /* background color */
+    transition: 0.5s; /* delayed transition when u have mouse over it */
 }
 
 /* Class selector, referring to elements in HTML that have a specific class (in this case "checkbtn") */
 .checkbtn{
-    font-size:30px;
-    float:right; 
-    line-height:80px;
-    cursor:pointer;
-    display:none;
-    padding-right: 20px;
+    font-size:30px; /* sets fontsize */
+    float:right; /* sets position to right */
+    line-height:80px; /* sets height to 80px */
+    cursor:pointer; /* sets cursor layout*/
+    display:none; /* none display */
+    padding-right: 20px; /* sets padding to 20 px to the right side*/
 }
 
 /* ID selector, which refers to an HTML element with the identifier "check" # - denotes the ID (using in the .html file: id="check") */
 #check{
-    display:none;
+    display:none; /* none display */
 }
 
 /* Selector referring to "<section>" elements in an HTML document */
