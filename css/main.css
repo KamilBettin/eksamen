@@ -7,7 +7,7 @@
 
 /* Selector referring to the "<body>" element in the HTML document */
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif; /* sets the font to TNR for the whole body */
     font-size: calc(15px + 0.390625vw); /* This font-size calculation was taken from https://matthewjamestaylor.com/responsive-font-size?utm_content=cmp-true */
 }
 
@@ -18,17 +18,20 @@ nav{
     width:100%; /* sets width to 100% of the screen */
 }
 
+/* Selector referring to the HTML element labeled "<h1>" */
 h1{
-    font-size:6vw;
-    padding: 5px;
-    text-align: center;
+    font-size:6vw; /* sets the fontsize */
+    padding: 5px; /* sets padding to 5px all sides*/
+    text-align: center; /* centers the text */
 }
+/* Selector referring to the HTML element labeled "<h2>" */
 h2{
-    font-size:2.5vw;
-    text-align: center;
+    font-size:2.5vw; /* sets the fontsize */
+    text-align: center; /* centers the text */
 }
+/* Selector referring to the HTML element labeled "<p>" */
 p{
-    padding-top: 10px;
+    padding-top: 10px; /* makes space from top 10 px */
 }
 
 
@@ -41,6 +44,7 @@ label.pLogo{
     font-weight: bold;
 }
 
+/* Selector referring to the HTML element labeled "<a>" in label sequence*/
 label a{
     text-decoration:none;
     color:#000000;
