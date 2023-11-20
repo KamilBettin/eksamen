@@ -1,247 +1,249 @@
 div{
-    word-wrap: break-word;
+    word-wrap: break-word; /* makes new line when words goes over grid */
 }
 
-.titteltopical{
-    color: yellow;
-    text-shadow: black 0px 0px 20px;
+.titteltopical{ 
+    color: yellow; /* sets the color to yellow */
+    text-shadow: black 0px 0px 20px; /* makes black shadow */
 }
 
+/* only works with the sreens with 1053px or more */
 @media (min-width: 1053px){
 
     .container{
-        display: grid;
-        grid-template-columns: 5% 59% 1px 30% 5%;
-        grid-auto-rows: minmax(100px, auto);
-        gap: 6px;
+        display: grid; /* make grid rules displays */
+        grid-template-columns: 5% 59% 1px 30% 5%; /* makes 5 boxes (6 lines) the first and the second last for a nice margin, the second one for main info, the third (1px) one for a nice black lane between grips and the next one i for the side info */
+        grid-auto-rows: minmax(100px, auto); /* automatic rows with minimum 100px height */
+        gap: 6px; /* gap/space between grid 6px */
     }
 
 .maininfo{
-    grid-column: 2 / 4;
-    grid-row: 3;
-    margin-right: 1rem;
+    grid-column: 2 / 4; /* works between 2 and 4 line (second box - 59% of the screen) */
+    grid-row: 3; /* works on grid row 3 */
+    margin-right: 1rem; /* margin to the right 1rem */
 }
 .maininfoaccess{
-    grid-column: 2 / 5;
-    grid-row: 1;
-    margin-right: 1rem;
+    grid-column: 2 / 5; /* similar example explained above */
+    grid-row: 1; /* similar example explained above */
+    margin-right: 1rem; /* similar example explained above */
 }
 .sideinfo{
-    grid-column: 4 / 5;
-    grid-row: 3 / auto;
-    padding-left: 10px;
+    grid-column: 4 / 5; /* similar example explained above */
+    grid-row: 3 / auto; /* similar example explained above */ 
+    padding-left: 10px; /* similar example explained above */
 }
 
 .line{
-    grid-column: 3 / 4;
-    grid-row: 3;
-    background-color: black;
+    grid-column: 3 / 4; /* similar example explained above */
+    grid-row: 3; /* similar example explained above */
+    background-color: black; /* sets the background color to black */
 }
 
 .articlepic{
-    grid-column: 2 / 5;
-    grid-row: 1;
-    background-image: url(../img/p35.jpg);
-    background-size: cover;
-    height: 40vw;
-    max-height: 600px;
+    grid-column: 2 / 5; /* similar example explained above */
+    grid-row: 1; /* similar example explained above */
+    background-image: url(../img/p35.jpg); /* sets the background to an image */
+    background-size: cover; /* covers all background with image */
+    height: 40vw; /* sets the height to 40% viewport of the screen */
+    max-height: 600px; /* sets the MAXIMUM height to 600px */
 }
 
 .biblioteketpic{
-    grid-column: 2 / 5;
-    grid-row: 1;
-    background-image: url(../img/biblioteket.jpg);
-    background-size: cover;
-    height: 40vw;
-    max-height: 600px;
+    grid-column: 2 / 5; /* similar example explained above */
+    grid-row: 1; /* similar example explained above */
+    background-image: url(../img/biblioteket.jpg); /* similar example explained above */
+    background-size: cover; /* similar example explained above */
+    height: 40vw; /* similar example explained above */
+    max-height: 600px; /* similar example explained above */
 }
 
 .tittel{
-    grid-column: 2 / 5;
-    grid-row: 2;
-    background-color: blanchedalmond;
+    grid-column: 2 / 5; /* similar example explained above */
+    grid-row: 2; /* similar example explained above */
+    background-color: blanchedalmond; /* similar example explained above */
 }
 
 .newinfo{
-    padding-top: 5rem;
+    padding-top: 5rem; /* similar example explained above */
 }
 
 
 .topicalpic{
-    grid-column: 2 / 5;
-    grid-row: 1;
-    background-image: url(../img/p35.jpg);
-    background-size: cover;
-    height: 50vw;
-    max-height: 800px;
+    grid-column: 2 / 5; /* similar example explained above */
+    grid-row: 1; /* similar example explained above */ 
+    background-image: url(../img/p35.jpg); /* similar example explained above */
+    background-size: cover; /* similar example explained above */
+    height: 50vw; /* similar example explained above */
+    max-height: 800px; /* similar example explained above */
 }
 
 .maininfotopical{
-    grid-column: 2 / 4;
-    grid-row: 2;
-    margin-right: 1rem;
+    grid-column: 2 / 4; /* similar example explained above */
+    grid-row: 2; /* similar example explained above */
+    margin-right: 1rem; /* similar example explained above */
 }
 .sideinfotopical{
-    grid-column: 4 / 5;
-    grid-row: 2 / auto;
-    padding-left: 10px;
+    grid-column: 4 / 5; /* similar example explained above */
+    grid-row: 2 / auto; /* similar example explained above */
+    padding-left: 10px; /* similar example explained above */
 }
 
 .linetopical{
-    grid-column: 3 / 4;
-    grid-row: 2;
-    background-color: black;
+    grid-column: 3 / 4; /* similar example explained above */
+    grid-row: 2; /* similar example explained above */
+    background-color: black; /* similar example explained above */
 }
 
 .topicalpictwo{
-    margin-top: 1rem;
-    grid-column: 2 / 5;
-    grid-row: 3;
-    background-image: url(../img/jotunheimen.jpg);
-    background-size: cover;
-    height: 50vw;
-    max-height: 800px;
+    margin-top: 1rem; /* similar example explained above */
+    grid-column: 2 / 5; /* similar example explained above */
+    grid-row: 3; /* similar example explained above */
+    background-image: url(../img/jotunheimen.jpg); /* similar example explained above */
+    background-size: cover; /* similar example explained above */
+    height: 50vw; /* similar example explained above */
+    max-height: 800px; /* similar example explained above */
 }
 
 .tittelsust{
-    grid-column: 2 / 5;
-    grid-row: 4;
+    grid-column: 2 / 5; /* similar example explained above */
+    grid-row: 4; /* similar example explained above */
 }
 
 .containersus{
-    grid-column: 2 / 3;
-    grid-row: 5;
+    grid-column: 2 / 3; /* similar example explained above */
+    grid-row: 5; /* similar example explained above */
 }
 
 .containersusside{
-    grid-column: 4 / 5;
-    grid-row: 5;
+    grid-column: 4 / 5; /* similar example explained above */
+    grid-row: 5; /* similar example explained above */
 }
 
 .linesus{
-    grid-column: 3 / 4;
-    grid-row: 5;
-    background-color: black;
+    grid-column: 3 / 4; /* similar example explained above */
+    grid-row: 5; /* similar example explained above */
+    background-color: black; /* similar example explained above */
 }
 
 .topicalarticle{
-    margin-top: 1rem;
-    grid-column: 2 / 3;
-    grid-row: 6;
-    position: relative;
+    margin-top: 1rem; /* similar example explained above */
+    grid-column: 2 / 3; /* similar example explained above */
+    grid-row: 6; /* similar example explained above */
+    position: relative; /* positioned relative to its normal position */
 }
 
 .topicalpicthree{
-    width: 100%;
-    max-height: 800px;
+    width: 100%;  /* sets the withd to 100% */
+    max-height: 800px; /* similar example explained above */
 }
 
 .topicalarticle .content{
-    position: absolute; /* Position the background text */
-    top: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
+    position: absolute; /* positioned relative to the nearest positioned ancestor */
+    top: 0; /* sets it at the top */
+    background: rgb(0, 0, 0); /* falling color */
+    background: rgba(0, 0, 0, 0.5); /* black background with 0.5 opacity */
+    width: 100%; /* full width */
+    padding: 20px; /* padding 20px all sides */
   }
 
   .topicalarticle .content a{
-    text-decoration: none;
-    color:yellow;
-    text-align: center;
+    text-decoration: none; /* sets the text decoration to none */
+    color:yellow; /* sets the color to yellow */
+    text-align: center; /* centers text */
   }
 
   .articleside{
-    grid-column: 4 / 5;
-    grid-row: 6;
+    grid-column: 4 / 5; /* similar example explained above */
+    grid-row: 6; /* similar example explained above */
   }
 
 .footercontainer{
-    display: grid;
-    grid-template-columns: 5% 45% 45% 5%;
-    gap: 6px;
+    display: grid; /* similar example explained above */
+    grid-template-columns: 5% 45% 45% 5%; /* make 4 boxes (5 lines), the first and the last one for a nice margin and the second and third one for main info */
+    gap: 6px; /* similar example explained above */
 }
 
 .footerfirst{
-    grid-column: 2 / 3;
+    grid-column: 2 / 3; /* similar example explained above */
 }
 
 .footersecond{
-    grid-column: 3 / 4;
+    grid-column: 3 / 4; /* similar example explained above */
 }
 
 }
 
+/* only works with a screen with 1052px or less */
 @media (max-width: 1052px){
     .articlepic{
-        background-image: url(../img/p35.jpg);
-        background-size: cover;
-        width: 90vw;
-        height: 60vw;
-        margin-left: 5vw;
+        background-image: url(../img/p35.jpg); /* similar example explained above */
+        background-size: cover; /* similar example explained above */
+        width: 90vw; /* similar example explained above */
+        height: 60vw; /* similar example explained above */ 
+        margin-left: 5vw; /* similar example explained above */
     }
 
     
 
     .biblioteketpic{
-        background-image: url(../img/biblioteket.jpg);
-        background-size: cover;
-        width: 90vw;
-        height: 60vw;
-        margin-left: 5vw;
+        background-image: url(../img/biblioteket.jpg); /* similar example explained above */
+        background-size: cover; /* similar example explained above */
+        width: 90vw; /* similar example explained above */
+        height: 60vw; /* similar example explained above */
+        margin-left: 5vw; /* similar example explained above */ 
     }
 
     .topicalpic{
-        background-image: url(../img/p35.jpg);
-        background-size: cover;
-        width: 90vw;
-        height: 60vw;
-        margin-left: 5vw;
+        background-image: url(../img/p35.jpg); /* similar example explained above */
+        background-size: cover; /* similar example explained above */
+        width: 90vw; /* similar example explained above */
+        height: 60vw; /* similar example explained above */
+        margin-left: 5vw; /* similar example explained above */
     }
 
     .topicalpictwo{
-        background-image: url(../img/jotunheimen.jpg);
-        background-size: cover;
-        width: 90vw;
-        height: 60vw;
-        margin-left: 5vw;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        background-image: url(../img/jotunheimen.jpg); /* similar example explained above */
+        background-size: cover; /* similar example explained above */
+        width: 90vw; /* similar example explained above */
+        height: 60vw; /* similar example explained above */
+        margin-left: 5vw; /* similar example explained above */
+        margin-top: 1rem; /* similar example explained above */
+        margin-bottom: 1rem; /* similar example explained above */
     }
 
     .topicalpicthree{
-        width: 90vw;
-        height: 60vw;
-        margin: 20px;
+        width: 90vw; /* similar example explained above */
+        height: 60vw; /* similar example explained above */
+        margin: 20px; /* similar example explained above */
     }
 
     .topicalarticle{
-        margin-top: 1rem;
-        position: relative;
+        margin-top: 1rem; /* similar example explained above */
+        position: relative; /* similar example explained above */
     }
 
     .topicalarticle .content{
-        position: absolute; /* Position the background text */
-        top: 0; /* At the bottom. Use top:0 to append it to the top */
-        background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-        width: 90vw; /* Full width */
-        margin: 20px;
+        position: absolute; /* similar example explained above */
+        top: 0; /* similar example explained above */
+        background: rgb(0, 0, 0); /* similar example explained above */
+        background: rgba(0, 0, 0, 0.5); /* similar example explained above */
+        width: 90vw; /* similar example explained above */
+        margin: 20px; /* similar example explained above */
       }
     
       .topicalarticle .content a{
-        text-decoration: none;
-        color:yellow;
-        text-align: center;
+        text-decoration: none; /* similar example explained above */
+        color:yellow; /* similar example explained above */
+        text-align: center; /* similar example explained above */
       }
 
     .maininfo, .sideinfo, .maininfotopical, .sideinfotopical, .containersus, .containersusside, .articleside, .maininfoaccess{
-        width: 90vw;
-        margin-top: 1rem;
-        margin-left: 5vw;
+        width: 90vw; /* similar example explained above */
+        margin-top: 1rem; /* similar example explained above */
+        margin-left: 5vw; /* similar example explained above */
     }
 
     .newinfo{
-        padding-top: 3rem;
-    }
+        padding-top: 3rem; /* similar example explained above */
+    } 
 }
