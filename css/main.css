@@ -102,8 +102,8 @@ a:hover{
 
 /* Selector referring to "<section>" elements in an HTML document */
 section{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 5px; /* sets 5 px margin to the top */
+    margin-bottom: 10px; /* sets 10 px margin to the bottom */
 }
 
 /* Selector referring to "<footer>" elements in an HTML document */
@@ -122,57 +122,57 @@ footer{
 /* Rule that applies to navigation elements when the width of the browser is at most 858 pixels.*/
 @media (max-width: 1052px){
 
-    .menu-icon {
-        display: inline;
-        background-image: url(../img/menu.svg);
-        background-size: cover;
-        padding: 6px;
-        padding-right: 40px;
+    .menu-icon { 
+        display: inline; /* fits itself in line */
+        background-image: url(../img/menu.svg); /* taken from one of the courses */
+        background-size: cover; /* covers all space */
+        padding: 6px; /* padding 6px all sides */
+        padding-right: 40px; /* paddin to the right 40px */
     }
 
 /* exlained above */
     .checkbtn{
-        display:block;
-        padding-left: 10px;
+        display:block; /* block display */
+        padding-left: 10px; /* paddin to the left 10 px */
         
     }
 
 /* Selector referring to an unordered list in an HTML document */
     ul{
-        position:fixed;
-        width:100%;
-        height:100vh;
-        top:80px;
-        left:-100%;
-        background-color:blanchedalmond;
-        text-align:center;
-        transition: all 0.5s;
+        position:fixed; /* static position  */
+        width:100%; /* width 100%  */
+        height:100vh; /* 100% of the viewport height */
+        top:80px; /* sets it after 80px from the top */
+        left:-100%; /* hiding to be checked */
+        background-color:blanchedalmond; /* sets the background color */
+        text-align:center; /* sets text to the centre */
+        transition: all 0.5s; /* transition for smooth opening */
     }
 
 
 
     /* exlained above */
     nav ul li{
-        display:block;
-        margin: 50px 0;
-        line-height: 30px;
+        display:block; /* block display */
+        margin: 50px 0; /* 50px margin top bottom - 0 left right */
+        line-height: 30px; /* 30px height */
     }
 
     /* exlained above */
     nav ul li a{
-        font-size:20px;
+        font-size:20px; /* sets font size to 20px */
     }
 
     /* exlained above */
     a:hover{
-        background:none;
-        color:yellow;
+        background:none; /* sets background to none */
+        color:yellow; /* sets color to yellow  */
 
     }
 
 /* Selector referring to the "ul" element, provided that the "check" element is checked (:checked) */
     #check:checked ~ ul{
-        left:0;
+        left:0; /* appears from left:-100 */
     }
 
 }
