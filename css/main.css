@@ -1,7 +1,7 @@
 /* Selector referring to each HTML element */
 *{
-    margin: 0px;
-    box-sizing: border-box;
+    margin: 0px; /* sets margin to 0 */
+    box-sizing: border-box; /* dont let things go out of the box */
 }
 
 
@@ -13,9 +13,9 @@ body{
 
 /* Selector referring to the HTML element labeled "<nav>" */
 nav{
-    background:yellow;
-    height:80px;
-    width:100%;
+    background:yellow; /* sets background to yellow */
+    height:80px; /* sets height to 80 pixels!*/
+    width:100%; /* sets width to 100% of the screen */
 }
 
 h1{
